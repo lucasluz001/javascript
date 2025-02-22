@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        /* CSS */
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: darkblue;
+            color: white;
+            font: normal 1.5em Arial;
+            padding: 10px;
+        }
+    </style>
+</head>
+<!-- HTML -->
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p name="paragrafo">Aqui vai o Resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Clique em mim</div>
+    <div class="mensagem">Clique aqui</div>
+    
+    <script>
+         // JAVASCRIPT
+        var p1 = window.document.getElementsByName('paragrafo')[0] // armazena na variavel p1, o  elemento por nome, no caso o paragrafo
+        var p2 = window.document.getElementsByTagName('p')[1] // armazena na variavel p2, o elemento por tag name, aqui no caso o segundo p
+        var d = window.document.getElementById('msg') // armazena na variavel d, o elemento por Id, no caso o msg
+        var query = window.document.querySelector('div.mensagem') // armazena na variavel query, qual sera o seletor, no caso a div com a classe mensagem
+        
+        window.document.write(p1.innerText)
+        window.alert(p2.innerText)
+        d.style.background = 'green'
+        // window.document.getElementById('msg').style.background = 'green' -> numa só linha
+        query.style.color = 'red'   
+        window.document.getElementsByTagName('strong')[0].style.color = 'yellow'    
+        
+    </script>
+</body>
+</html>
