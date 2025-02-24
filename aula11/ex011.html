@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Onde você mora?</h1>
+    <input type="text" name="cxpais" id="cxpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div class="pais"></div>
+
+<script>
+    function verificar(){
+        var cxp = window.document.querySelector('input#cxpais') // conexão var cxp com a input#cxpais
+        var pais = window.document.querySelector('div.pais') // conexão var pais com a div.pais
+        var caixa = (cxp.value) // caixa recebe valor da input
+        pais.innerHTML = `<p>Você mora em/no/na ${caixa}</p>`
+        if (caixa == 'Brasil') {
+            pais.innerHTML += `<p>Você é Brasileiro</p>`
+        } else {
+            pais.innerHTML += `<p>Você é Estrangeiro</p>`
+        }
+    }
+</script>
+</body>
+</html>
