@@ -38,3 +38,21 @@ switch(diaSem){
         console.log('[ERRO] Dia inválido!')
         break
 }
+
+console.log('')
+
+escolha = 2
+console.log('Escolha 3 opções:')
+switch (escolha){
+    case 1:
+        console.log(`Você escolheu um chocolate`)
+        break
+    case 2:
+        console.log(`Você escolheu uma paçoca`)
+        break
+    case 3:
+        console.log(`Você escolheu um bombom`)
+        break
+    default:
+        console.log(`Opção inválida.`)
+}
