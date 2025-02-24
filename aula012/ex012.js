@@ -8,3 +8,15 @@ if (hora < 12){
 } else {
     console.log(`Boa noite!`)
 }
+
+var nota = 1
+console.log(`Sua nota na prova foi ${nota}`)
+if (nota < 5){
+    console.log(`Reprovado`)
+} else if (nota == 10){
+    console.log(`Aprovado com distinção`)
+} else if( nota > 10 ){
+    console.log(`Nota inválida`)
+} else {
+    console.log(`Aprovado`)
+}
