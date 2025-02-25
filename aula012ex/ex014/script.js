@@ -1,15 +1,16 @@
 function carregar(){
     var msg = window.document.getElementById('msg')
-    var img = window.document.getElementById('imagem')
-    // ATRIBUI A VARIAVEL hora VALOR DE HORAS EM TEMPO REAL
+    var img = window.document.getElementById('img')
+    // ATRIBUI A VARIAVEL hora O VALOR DE HORAS EM TEMPO REAL
     var data = new Date()
     var hora = data.getHours()
-    msg.innerHTML = `Agora são ${hora} horas`
-    // TESTA A VARIAVEL hora E MUDA A IMAGEM E BACKGROUND
+    msg.innerHTML = `<p>Agora são ${hora} horas</p>`
+    // TESTA A VARIAVEL hora MUDANDO A IMAGEM E BACKGROUND
     if(hora >=0 && hora < 12){
         // BOM DIA
         img.src = 'manha.png'
         document.body.style.background = '#fbc57d'
+        
     }else if(hora >= 12 && hora < 18){
         //BOA TARDE
         img.src = 'tarde.png'
