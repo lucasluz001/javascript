@@ -1,4 +1,5 @@
 function carregar(){
+    // INTEGRAÇÃO DAS VARIAVEIS msg E msg PELO ELEMENTO ID
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('img')
     // ATRIBUI A VARIAVEL hora O VALOR DE HORAS EM TEMPO REAL
