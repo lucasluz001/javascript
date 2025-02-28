@@ -1,0 +1,67 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: dimgrey;
+    font: normal 15pt Arial;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+header{
+    color:white;
+    text-align: center;
+}
+
+header > h1 {
+    margin: 15px;
+}
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
+}
+.form {
+    padding: 10px 0px;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type = number]{
+    height:30px;
+    font-size: 18px;
+}
+
+#form #enviar{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color:#696969;
+    color: white;
+    cursor: pointer;
+}
+
+textarea {
+    height: 200px;
+}
+
+footer {
+    color:white;
+    text-align: center;
+}
+
+footer > p {
+    margin: 15px;
+}
