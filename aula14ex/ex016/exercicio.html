@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h1>Contador</h1>
+    </header>
+    <section>
+        <div>
+            <form id="form">
+                <label for="inicio">Inicio</label>
+                <input type="number" name="inicio" id="inicio" placeholder="Digite um número"><br><br>
+
+                <label for="fim">Fim</label>
+                <input type="number" name="fim" id="fim" min="0" placeholder="Digite um número"><br><br>
+
+                <label for="passo">Passo</label>
+                <input type="number" name="passo" id="passo" min="0" placeholder="Digite um número"><br><br>
+
+                
+                <input type="button" value="Contar" id="enviar">
+            </form>
+        </div>
+        <div id="res">
+            Preencha o campo acima para ver o resultado.
+        </div>
+        
+    </section>
+    <footer> 
+        <p>@Curso em vídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
