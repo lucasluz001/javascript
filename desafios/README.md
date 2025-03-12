@@ -1,7 +1,7 @@
 # Desafios de Javascript 
 
 <p>Lista de desafios do repositório de Javascript do Gustavo guanabara.</p>
-<p>Se desafie, tente replicar os programas a seguir:</p>
+<p>Faça você também, tente replicar os programas a seguir:</p>
 
 1. [Desafio das mensagens](https://lucasluz001.github.io/javascript/desafios/d001/index)
 
