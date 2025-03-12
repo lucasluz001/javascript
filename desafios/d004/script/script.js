@@ -9,6 +9,6 @@ function comprar(){
     if(troco < 0){
         window.alert(`Dinheiro insuficiente para comprar o(a) ${produto}`)
     }else {
-        window.alert(`Você comprou o(a) ${produto} que custou R$${preco}.\nDeu R$${valor} em dinheiro e vai receber R$${troco} de troco.\nVolte Sempre!`)
+        window.alert(`Você comprou o(a) ${produto} que custou ${preco.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}.\nDeu ${valor.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} em dinheiro e vai receber ${troco.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} de troco.\nVolte Sempre!`)
     }
 }
