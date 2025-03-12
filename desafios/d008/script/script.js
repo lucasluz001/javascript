@@ -6,7 +6,8 @@ function calcular(){
     const produto = window.prompt('Qual é o produto que você está comprando?')
     const preco = window.parseFloat(prompt(`Qual é o preço do(a) ${produto}?`))
     const desconto = preco * 0.10
-    res.innerHTML = `<p>O preço original era R$${preco.toLocaleString()}.</p>`
-    res.innerHTML += `<p>Você acaba de ganhar R$${desconto} de desconto (-10%).</p>`
-    res.innerHTML += `<p>No fim, você vai pagar R${preco - desconto} no produto ${produto}.</p>`
+    const diferenca = preco - desconto
+    res.innerHTML = `<p>O preço original era ${preco.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}.</p>`
+    res.innerHTML += `<p>Você acaba de ganhar ${desconto.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} de desconto (-10%).</p>`
+    res.innerHTML += `<p>No fim, você vai pagar ${diferenca.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} no produto ${produto}.</p>`
 }
