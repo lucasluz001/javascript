@@ -1,8 +1,8 @@
 var botao = window.document.querySelector('input#btn')
 var res = window.document.querySelector('div#resultado')
-botao.addEventListener('click', reajustar)
+botao.addEventListener('click', formular)
 
-function reajustar(){
+function formular(){
     const a = window.prompt(`Qual é o valor de a?`)
     const b = window.prompt(`Qual é o valor de b?`)
     const c = window.prompt(`Qual é o valor de c?`)
