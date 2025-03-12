@@ -9,7 +9,7 @@ function reajustar(){
     const porcentagem = reajustePorcentagem / 100
     const aumento = parseFloat(salario * porcentagem) 
     const salarioNovo = parseFloat(salario + aumento)
-    res.innerHTML = `<p>O salário atual era R$${salario.toLocaleString()}</p>`
-    res.innerHTML += `<p>Com um aumento de ${reajustePorcentagem}%, o salário vai aumentar R$${aumento.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} no próximo mês.</p>`
-    res.innerHTML += `<p>E a partir daí, ${funcionario} vai passar a ganhar R$${salarioNovo.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</p>`
+    res.innerHTML = `<p>O salário atual era ${salario.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</p>`
+    res.innerHTML += `<p>Com um aumento de ${reajustePorcentagem}%, o salário vai aumentar ${aumento.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} no próximo mês.</p>`
+    res.innerHTML += `<p>E a partir daí, ${funcionario} vai passar a ganhar ${salarioNovo.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</p>`
 }
