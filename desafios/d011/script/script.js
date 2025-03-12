@@ -1,8 +1,8 @@
 var botao = window.document.querySelector('input#btn')
 var res = window.document.querySelector('div#resultado')
-botao.addEventListener('click', reajustar)
+botao.addEventListener('click', verificar)
 
-function reajustar(){
+function verificar(){
     const ano = window.Number(prompt('Qual é o ano que você quer verificar?'))
     if (ano % 4 == 0){
         res.innerHTML = `<h2>Analisando o ano de ${ano}...</h2>`
