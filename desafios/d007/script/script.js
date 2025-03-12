@@ -6,6 +6,6 @@ var cotacaoDolar = window.prompt('Antes de mais nada. Quanto está a cotação d
 function converter(){
     const real = window.prompt('Quantos R$ você tem na carteira?')
     const conversao = real / cotacaoDolar
-    res.innerHTML = `<p>Você obteve US$${conversao.toLocaleString()}.</p>`
+    res.innerHTML = `<p>Você obteve ${conversao.toLocaleString('en-US',{style:'currency',currency:'USD'})}.</p>`
 
 }
