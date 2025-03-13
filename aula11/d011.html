@@ -17,7 +17,7 @@
         var pais = window.document.querySelector('div.pais') // conexão var pais com a div.pais
         var caixa = (cxp.value) // caixa recebe valor da input
         pais.innerHTML = `<p>Você mora em/no/na ${caixa}</p>`
-        if (caixa == 'Brasil') {
+        if (caixa == 'Brasil' || caixa == 'brasil') {
             pais.innerHTML += `<p>Você é Brasileiro</p>`
         } else {
             pais.innerHTML += `<p>Você é Estrangeiro</p>`
