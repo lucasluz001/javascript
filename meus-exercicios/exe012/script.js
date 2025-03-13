@@ -18,7 +18,7 @@ function ordenar(){
       res.innerHTML = ''
       res.innerHTML += `<p>Vetor = [${vetor}]</p><br>`
       res.innerHTML += `<p>Maior número do vetor = ${maior}</p><br>`
-      res.innerHTML += `Vetor ordenado = [${vetor.sort()}]`
+      res.innerHTML += `Vetor ordenado = [${vetor.sort((a,b) => a-b)}]`
       }
 
       
