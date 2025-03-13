@@ -7,7 +7,7 @@ function limitaPosicao(){
     if (posicao < 0){
         posicao = 0
         res.innerHTML = `<p> O inimigo estava fora do mapa, agora está reposicionado na posição: ${posicao}`
-    }if (posicao > 100){
+    }else if (posicao > 100){
         posicao = 100 
         res.innerHTML = `<p> O inimigo estava fora do mapa, agora está reposicionado na posição: ${posicao}`
     } else {
